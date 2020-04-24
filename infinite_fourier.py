@@ -528,6 +528,8 @@ class single_recursive_images:
 			reverse_exp_arg_fac=-np.pi*2*self.layers[layer].t_eff
 			reverse_exp_mul_fac=np.exp(reverse_exp_arg_fac*2)
 			reverse_cur_exp=np.exp(reverse_exp_arg_fac)
+		else:
+			reverse_cur_exp=0
 		for n in range(self.max_fourier_n):
 			N=2*n+1
 			P=getPfield(n)
@@ -600,6 +602,12 @@ class multiple_recursive_images:
 		# t refers to the thicknes of layers of finite thickness. This vector may have 0 elements.
 		# LAcomp must be an int, or a vector of same length as eta
 		# voltages must be 'None' or a vector of same length as eta, and is uset to set voltage ratios if multiple sets of electrodes are used
+		if not len(eps_x_of_layers)==len(eps_y_of_layers):
+			raise NameError('InputSizeError: "eps_x_of_layers" not same size as "eps_y_of_layers"')
+		if not len(t)==len(eps_x_of_layers)-2:
+			raise NameError('InputSizeError: "t" not 2 shorter than as "eps_y_of_layers"')
+		if not len(t)==len(etas)-1:
+			raise NameError('InputSizeError: "t" not 1 shortert than "etas"')
 		self.accuracy_limit=accuracy_limit
 		self.etas=np.array(etas)
 		#self.a=1-etas[0]
