@@ -1,6 +1,6 @@
 # Interdigitated-Electrodes
 
-Interdigitated-Electrodes is a python module for calculating the capacitance and electric field surrounding interdigitated electrodes. The code is demonstrated in an interactive web app hosted at http://interdigitated-electrodes.herokuapp.com/ . 
+Interdigitated-Electrodes is a python module for calculating the capacitance and electric field surrounding interdigitated electrodes. The code is demonstrated in an interactive web app hosted at https://interdigitated-electrodes.streamlit.app/. 
 
 Examples of use are supplied in jupyter notebooks:
 
