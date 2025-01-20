@@ -1,6 +1,6 @@
-scipy==1.8.1
-numpy==1.23.1
-streamlit==1.11.0
-matplotlib==3.5.2
-pandas==1.4.3
-pillow==9.2.0
+scipy==1.15.1
+numpy==2.2.2
+streamlit==1.41.1
+matplotlib==3.10.0
+pandas==2.2.3
+pillow==11.1.0

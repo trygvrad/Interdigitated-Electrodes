@@ -142,7 +142,7 @@ C_tot=L*( (N-3)*C_inf + 2*C_E ) / 1000000 # L in [um], C_inf and C_E in [F/m], C
 from PIL import Image
 image = Image.open('streamlit IDE.png')
 st.image(image, caption='Notation used to describe the geometry of interdigitated electrodes on a thin film',
-      use_column_width=True)
+      use_container_width=True)
 st.subheader('Capacitance of the structure described by the input parameters:')
 
 st.write( C_tot, 'F')
