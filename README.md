@@ -19,3 +19,4 @@ While the following files are used for validation:
 * tests.ipynb
 * tests_pair.ipynb
 
+A detailed description of the model is available in  https://iopscience.iop.org/article/10.1088/1361-665X/abb4b9/meta
